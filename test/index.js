@@ -8,6 +8,8 @@ var Storage = require('node-document-storage');
 module.exports = Storage.Spec('Memcached', {
   module: require('..'),
   engine: require('memcached'),
+  id: 'memcached',
+  protocol: 'memcache',
   db: 'default-test',
   default_url: 'memcache://localhost:11211/default-test',
   authorized_url: 'memcache://776617:00112ab7bcb3dc6ad345@dev1.ec2.memcachier.com:11211/test',
